@@ -1,0 +1,15 @@
+-- ROLLBACK: INSERT, UPDATE, DELETE, cannot CREATE, DROP;
+
+SELECT * FROM orderitems WHERE order_num = 12345;
+SELECT * FROM orders WHERE order_num = 12345;
+
+START TRANSACTION
+DELETE orderitems WHERE order_num = 12345;
+DELETE orders WHERE order_num = 12345;
+COMMIT TRANSACTION
+
+-- SAVEPOINT
+SAVEPOINT delete1
+ROLLBACK TO delete1;
+
+
