@@ -68,3 +68,54 @@
 -- SELECT VEND_NAME,PROD_NAME FROM VENDORS ,products  WHERE products.VEND_ID =VENDORS.VEND_ID
 -- SELECT VEND_NAME,PROD_NAME FROM VENDORS INNER JOIN PRODUCTS ON  PRODUCTS.VEND_ID =VENDORS.VEND_ID
 
+
+
+
+
+
+
+-- ==================================分隔符==================================
+-- 如下是数据库系统概论的学习笔记
+--  连接查询，包括等值查询与非等值查询。
+-- 等值查询：连接谓词为“=” ，也叫作内连接
+-- 非等值查询：当查询的连接谓词不为=时候称作非等值查询
+-- 连接谓词中的列名叫做连接字段
+
+
+-- 自身连接 ：连接操作不仅可以在两个表之间进行连接，也可以一个表 与自身进行连接。
+
+
+-- 外连接：当两个表进行连接时候，表A中存在的记录在表B中不存在，则当进行连接时候通常会舍弃表A中存在而表B中不存在的记录。为了可以保留表A中存在表B不存在的记录的话，我们可以使用外连接。表A中存在表B中不存在的记录查询出来的时候表B中的值填充NULL
+
+-- 外连接包含：左外连接与右外连接。具体区别如下：
+
+-- 左外连接：列出左边关系中的所有元组
+-- 右外连接：列出右边关系中的所有元组
+
+-- 多表连接：使用WHERE条件将多个表进行连接
+
+-- null处理需要使用IS NULL 或者IS NOT NULL
+-- SELECT * FROM sz_shop WHERE sdate IS NOT NULL 
+
+
+
+-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
